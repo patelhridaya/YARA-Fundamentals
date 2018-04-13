@@ -1,0 +1,11 @@
+//string offsets or virtual addresses
+
+rule AtExample 
+{
+  strings:
+  $a = "dummy1"
+  $b = "dummy2"
+
+  condition:
+    $a at 100 and $b at 200
+}

@@ -1,0 +1,8 @@
+rule CaseInsensitiveTextExample 
+{
+  strings:
+    $text_string = "foobar" nocase
+
+  condition:
+    $text_string
+}
